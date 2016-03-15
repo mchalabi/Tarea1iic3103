@@ -4,11 +4,6 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
-using System.Security.Cryptography.HashAlgorithm;
-using System.Security.Cryptography.SHA256;
-using System.Security.Cryptography.SHA256Cng;
-using System.Security.Cryptography.SHA256CryptoServiceProvider;
-using System.Security.Cryptography.SHA256Managed;
 
 namespace APITarea1.Controllers
 {
@@ -32,8 +27,9 @@ namespace APITarea1.Controllers
         }
 
         // PUT api/values/5
-        public void Put(int id, [FromBody]string value)
+        public string Put([FromBody]string value)
         {
+            return "hola";
         }
 
         // DELETE api/values/5
