@@ -4,9 +4,8 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
-using System.Security.Cryptography;
 
-namespace API.Controllers
+namespace MvcApplication1.Controllers
 {
     public class ValuesController : ApiController
     {
@@ -19,19 +18,17 @@ namespace API.Controllers
         // GET api/values/5
         public string Get(string id)
         {
-            return "id";
+            return id;
         }
 
         // POST api/values
-        public string Post([FromBody]string value)
+        public void Post([FromBody]string value)
         {
-            return "hola";
         }
 
         // PUT api/values/5
-        public string Put([FromBody]string value)
+        public void Put([FromBody]string value)
         {
-            return "chao";
         }
 
         // DELETE api/values/5
