@@ -4,6 +4,7 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using System.Security.Cryptography;
 
 namespace API.Controllers
 {
@@ -16,19 +17,21 @@ namespace API.Controllers
         }
 
         // GET api/values/5
-        public string Get(int id)
+        public string Get(string id)
         {
-            return "value";
+            return id;
         }
 
         // POST api/values
-        public void Post([FromBody]string value)
+        public string Post([FromBody]string value)
         {
+            return "hola";
         }
 
         // PUT api/values/5
-        public void Put(int id, [FromBody]string value)
+        public string Put([FromBody]string value)
         {
+            return "chao";
         }
 
         // DELETE api/values/5
