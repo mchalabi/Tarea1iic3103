@@ -9,6 +9,8 @@ namespace MvcApplication1.Controllers
 {
     public class ValuesController : ApiController
     {
+        int ennada;
+
         // GET api/values
         public IEnumerable<string> Get()
         {
